@@ -9,7 +9,18 @@ import enrollRoutes from "./routes/enrollRoutes.js";
 dotenv.config();
 const app = express();
 
-app.use(cors());
+import cors from "cors";
+
+app.use(
+  cors({
+    origin: [
+      "https://cyberoaks-b953.vercel.app/", 
+    ],
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true,
+  })
+);
+
 app.use(express.json());
 
 // ===== MongoDB Connection =====
