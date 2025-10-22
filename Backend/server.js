@@ -15,6 +15,7 @@ app.use(
   cors({
     origin: [
       "https://cyberoaks-b953.vercel.app", 
+      credentials: true,
     ],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
