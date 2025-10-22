@@ -23,11 +23,10 @@ app.use("/api/demo", demoRoutes);
 
 // Root test route
 
-app.get("/", (req, res) => {
-  res.status(200).json({
+app.get('/', (req, res) => {
+  res.send({
     activestatus: true,
     error: false,
-    message: "Cyberoaks backend running successfully "
   });
 });
 
