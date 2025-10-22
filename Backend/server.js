@@ -21,12 +21,13 @@ mongoose
 // Routes
 app.use("/api/demo", demoRoutes);
 
-// Root test route
 
-app.get('/', (req, res) => {
-  res.send({
-    activestatus: true,
+// ===== Root Route =====
+app.get("/", (req, res) => {
+  res.status(200).json({
+    activeStatus: true,
     error: false,
+    message: "Cyberoaks backend running successfully 🚀",
   });
 });
 
