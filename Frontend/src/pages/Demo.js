@@ -61,7 +61,7 @@ export default function Demo() {
     setLoading(true);
 
     try {
-      const res = await fetch("http://localhost:5000/api/demo/saveDemo", {
+      const res = await fetch("https://cyberoaks-cj2p.vercel.app/api/demo/saveDemo", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
