@@ -1,0 +1,439 @@
+
+
+/* ===== Banner ===== */
+.uiux-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(180deg, #d1e7dd, #ffffff);
+  padding: 80px 60px;
+  flex-wrap: wrap;
+}
+
+.uiux-banner-content {
+  width: 50%;
+  min-width: 320px;
+}
+
+.uiux-banner-content h1 {
+  color: #0f5132;
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.uiux-banner-content p {
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 15px 0 25px;
+}
+
+.uiux-btn {
+  background: linear-gradient(90deg, #198754, #0f5132);
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(25, 135, 84, 0.3);
+  border: none;
+  padding: 10px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: background 0.3s;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.uiux-btn:hover {
+  background: #0f5132;
+}
+
+.uiux-banner-image-right {
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+}
+
+.uiux-banner-image {
+  width: 480px;
+  height: auto;
+  max-width: 100%;
+}
+
+/* ===== Scroll Banner ===== */
+.scroll-banner {
+  background: linear-gradient(90deg, #0f5132, #198754);
+  color: #fff;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  padding: 12px 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-top: 3px solid #0f5132;
+  border-bottom: 3px solid #0f5132;
+}
+
+.scroll-track {
+  display: flex;
+  animation: scroll-left 20s linear infinite;
+}
+
+.scroll-content {
+  display: flex;
+  align-items: center;
+}
+
+.scroll-content span {
+  margin-right: 80px;
+  letter-spacing: 1px;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* ===== Overview ===== */
+.uiux-overview {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 80px 60px;
+  background: #e9f7ef;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.uiux-overview-left {
+  flex: 2;
+  min-width: 320px;
+}
+
+.uiux-overview-left h2 {
+  color: #0f5132;
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+.uiux-overview-left h3 {
+  color: #198754;
+  margin: 30px 0 10px;
+  font-size: 20px;
+}
+
+.uiux-overview-left p {
+  color: #333;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+
+/* ===== Curriculum ===== */
+.uiux-curriculum {
+  background: linear-gradient(180deg, #d1e7dd, #ffffff);
+  padding: 80px 60px;
+  text-align: center;
+}
+
+.uiux-curriculum h2 {
+  color: #0f5132;
+  margin-bottom: 40px;
+  font-size: 32px;
+}
+
+.uiux-curriculum-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.uiux-accordion-item {
+  background: white;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.uiux-accordion-title {
+  width: 100%;
+  text-align: left;
+  background: linear-gradient(180deg, #c3e6cb, #d1e7dd);
+  color: #0f5132;
+  padding: 15px 20px;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.uiux-accordion-content {
+  background: #f9fafb;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.uiux-accordion-content ul {
+  padding: 15px 30px;
+}
+
+.uiux-accordion-content li {
+  color: #333;
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
+/* ===== Tools Section ===== */
+.uiux-tools-section {
+  background: #f8fffb;
+  text-align: center;
+  padding: 80px 20px;
+  overflow: hidden;
+}
+
+.uiux-tools-section h2 {
+  color: #005b3b;
+  font-size: 34px;
+  font-weight: 600;
+  margin-bottom: 50px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ===== Carousel ===== */
+.uiux-carousel {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.uiux-tools-wrapper {
+  display: flex;
+  transition: transform 1.8s ease-in-out;
+}
+
+.uiux-tool {
+  flex: 0 0 calc(100% / 6); /* Always 6 icons visible */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.uiux-tool img {
+  width: 90px;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.1));
+  transition: transform 0.3s ease;
+}
+
+.uiux-tool img:hover {
+  transform: scale(1.1);
+}
+
+/* ===== Dots ===== */
+.uiux-dots {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  background: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.dot.active {
+  background: #005b3b;
+}
+
+/* ===== FAQ ===== */
+.uiux-faq {
+  background: #e9f7ef;
+  padding: 80px 60px;
+  text-align: center;
+}
+
+.uiux-faq h2 {
+  color: #0f5132;
+  margin-bottom: 40px;
+  font-size: 40px;
+}
+
+.uiux-faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.uiux-faq-item {
+  background: white;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  text-align: left;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.uiux-faq-question {
+  width: 100%;
+  background: transparent;
+  color: #0f5132;
+  border: none;
+  padding: 15px 20px;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.uiux-faq-answer {
+  background: #f9fafb;
+  padding: 0 20px;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.uiux-faq-answer p {
+  margin: 15px 0;
+  color: #333;
+  font-size: 15px;
+}
+
+/* ===========================================================
+   RESPONSIVE ADJUSTMENTS
+   =========================================================== */
+
+/* ----- Large Tablets / Small Laptops (max 992px) ----- */
+@media (max-width: 992px) {
+  .uiux-banner {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 30px;
+  }
+
+  .uiux-banner-content {
+    width: 100%;
+  }
+
+  .uiux-banner-image {
+    width: 90%;
+    margin-top: 20px;
+  }
+
+  .uiux-overview {
+    flex-direction: column;
+    padding: 60px 30px;
+  }
+
+  .uiux-overview-left {
+    width: 100%;
+  }
+
+  .uiux-curriculum,
+  .uiux-faq {
+    padding: 60px 30px;
+  }
+}
+
+/* ----- Tablets (max 768px) ----- */
+@media (max-width: 768px) {
+  .uiux-banner-content h1 {
+    font-size: 30px;
+  }
+
+  .uiux-overview-left h2,
+  .uiux-curriculum h2,
+  .uiux-faq h2 {
+    font-size: 28px;
+  }
+
+  .uiux-tool img {
+    width: 80px;
+  }
+
+  .uiux-tools-section h2 {
+    font-size: 28px;
+  }
+
+  .scroll-content span {
+    margin-right: 40px;
+    font-size: 0.95rem;
+  }
+}
+
+/* ----- Mobile (max 576px) ----- */
+@media (max-width: 576px) {
+  .uiux-banner {
+    padding: 50px 20px;
+  }
+
+  .uiux-banner-content h1 {
+    font-size: 26px;
+  }
+
+  .uiux-banner-content p {
+    font-size: 14px;
+  }
+
+  .uiux-btn {
+    padding: 8px 20px;
+    font-size: 14px;
+  }
+
+  .uiux-overview {
+    padding: 50px 20px;
+  }
+
+  .uiux-overview-left h2 {
+    font-size: 24px;
+  }
+
+  .uiux-curriculum,
+  .uiux-faq {
+    padding: 50px 20px;
+  }
+
+  .uiux-tool img {
+    width: 65px;
+  }
+
+  .dot {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+/* ----- Small Mobile (max 400px) ----- */
+@media (max-width: 400px) {
+  .uiux-banner-content h1 {
+    font-size: 22px;
+  }
+
+  .uiux-banner-content p {
+    font-size: 13px;
+  }
+
+  .uiux-tool img {
+    width: 55px;
+  }
+
+  .uiux-overview-left h2 {
+    font-size: 22px;
+  }
+}

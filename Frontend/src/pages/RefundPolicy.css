@@ -1,0 +1,76 @@
+
+.refund-container {
+  font-family: "Poppins", sans-serif;
+  color: #222;
+  background-color: #ffffff;
+  padding: 80px 45px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+.refund-title {
+  color: #006b49;
+  font-size: 2.4rem;
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+
+.refund-intro {
+  font-size: 1rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+h2 {
+  color: #006b49;
+  font-size: 1.5rem;
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style: disc;
+  padding-left: 30px;
+  margin-bottom: 20px;
+}
+
+ul li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #333;
+}
+
+
+
+.refund-contact p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.refund-contact a {
+  color: #006b49;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.refund-contact a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .refund-container {
+    padding: 60px 15px;
+  }
+
+  .refund-title {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  ul li {
+    font-size: 0.95rem;
+  }
+}

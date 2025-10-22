@@ -1,0 +1,293 @@
+/* ===== Banner ===== */
+.about-page-banner {
+  position: relative;
+  width: 100%;
+  height: 85vh;
+  overflow: hidden;
+}
+
+.about-page-banner-img {
+  width: 100%;
+  height: 100%;
+
+  filter: brightness(0.6);
+}
+
+.about-page-banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.3;
+  width: 90%;
+  max-width: 950px;
+}
+
+/* ===== About Section ===== */
+.about-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 20px;
+  flex-wrap: wrap;
+}
+
+.about-page-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.about-page-images {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.about-page-img {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.about-page-img1,
+.about-page-img2 {
+  width: 265px;
+  height: 450px;
+}
+
+.about-page-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.about-page-play-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #006b49;
+  color: #ffffff;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.about-page-stats-card {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  background: #f85c70;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== Right Side ===== */
+.about-page-right {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-page-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1d1d1f;
+  margin-bottom: 1rem;
+}
+
+.about-page-highlight {
+  color: #006b49;
+}
+
+.about-page-desc {
+  font-size: 1rem;
+  color: #555555;
+  margin-bottom: 2rem;
+  max-width: 500px;
+}
+
+.about-page-features li {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* ===== Benefits ===== */
+.about-page-benefits {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 80px 20px;
+  background: #ffffff;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-page-section-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #1d1d1f;
+  margin-bottom: 2rem;
+}
+
+.about-page-benefit-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.about-page-benefit-icon {
+  font-size: 1.6rem;
+  color: #006b49;
+}
+
+.about-page-benefit-images img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+/* ===== FAQ ===== */
+.about-page-faq {
+  background: linear-gradient(180deg, #d1fae5, #ffffff);
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.about-page-faq-list {
+  max-width: 700px;
+  margin: 40px auto;
+  text-align: left;
+}
+
+.about-page-faq-item {
+  background: #ffffff;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.about-page-faq-item.active {
+  border-left: 5px solid #006b49;
+}
+
+.about-page-faq-question {
+  background: transparent;
+  border: none;
+  width: 100%;
+  text-align: left;
+  padding: 18px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1d1d1f;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-page-faq-icon {
+  font-size: 1.5rem;
+  color: #006b49;
+}
+
+.about-page-faq-answer {
+  padding: 0 20px;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+}
+
+.about-page-faq-answer p {
+  color: #555555;
+  font-size: 0.95rem;
+  margin: 10px 0 15px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 992px) {
+  .about-page-banner-text {
+    font-size: 2.4rem;
+  }
+
+  .about-page-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-page-images {
+    justify-content: center;
+  }
+
+  .about-page-benefits {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-page-banner {
+    height: 70vh;
+  }
+
+  .about-page-banner-text {
+    font-size: 1.8rem;
+  }
+
+  .about-page-img1,
+  .about-page-img2 {
+    width: 200px;
+    height: 320px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-page-banner {
+    height: 60vh;
+  }
+
+  .about-page-banner-text {
+    font-size: 1.4rem;
+  }
+
+  .about-page-img1,
+  .about-page-img2 {
+    width: 160px;
+    height: 260px;
+  }
+
+  .about-page-title {
+    font-size: 1.5rem;
+  }
+
+  .about-page-section-title {
+    font-size: 1.4rem;
+  }
+
+  .about-page-benefit-images img {
+    max-width: 100%;
+  }
+}

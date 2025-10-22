@@ -1,0 +1,57 @@
+
+
+.privacy-container {
+  font-family: "Poppins", sans-serif;
+  color: #222;
+  background-color: #ffffff;
+  padding: 80px 45px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+.privacy-title {
+  color: #006b49;
+  font-size: 2.4rem;
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+
+.privacy-content p {
+  font-size: 1rem;
+  margin-bottom: 18px;
+  color: #333;
+}
+
+.privacy-content strong {
+  color: #006b49;
+}
+
+
+.privacy-contact p {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.privacy-contact a {
+  color: #006b49;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.privacy-contact a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .privacy-container {
+    padding: 60px 15px;
+  }
+
+  .privacy-title {
+    font-size: 2rem;
+  }
+
+  .privacy-content p {
+    font-size: 0.95rem;
+  }
+}

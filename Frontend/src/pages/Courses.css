@@ -1,0 +1,86 @@
+.courses-container {
+  font-family: "Poppins", sans-serif;
+  background: #f9fafb;
+  min-height: 100vh;
+}
+
+/* -------------------- COURSES SECTION -------------------- */
+.courses-section {
+  text-align: center;
+  padding: 90px 20px;
+  background-color: #fff;
+}
+.course-heading-main{
+   color: #006b49;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+.courses-heading {
+  color: #006b49;
+  font-size: 2.3rem;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+/* -------------------- COURSE GRID -------------------- */
+.course-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 40px;
+  padding-bottom: 60px;
+}
+
+/* -------------------- COURSE CARD -------------------- */
+.course-card {
+  background: white;
+  border-radius: 12px;
+  padding: 25px 20px;
+  width: 400px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.course-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.course-image {
+  width: 100%;
+  border-radius: 10px;
+  height: 250px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.course-heading {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #0b3d2e;
+}
+
+.course-card p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* -------------------- BUTTON -------------------- */
+.btn-sm {
+  background: #009b73;
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 16px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.btn-sm:hover {
+  background: #007a5a;
+}

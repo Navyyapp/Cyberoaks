@@ -1,0 +1,67 @@
+
+.reviews-section {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 20px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.reviews-section h2 {
+     font-size: 2.3rem;
+  margin-bottom: 30px;
+  color: #006b49;
+}
+
+/* Carousel container */
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+/* Track */
+.carousel-track {
+  display: flex;
+  transition: transform 0.7s ease-in-out;
+}
+
+/* Cards */
+.review-card {
+  flex: 0 0 33.333%;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+  padding: 20px 20px;
+  margin: 2px;
+  text-align: left;
+}
+
+.review-card .quote {
+  font-size: 1rem;
+  font-style: italic;
+  color: #333;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.review-card h4 {
+  font-weight: 600;
+  color: #006b49;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .review-card {
+    flex: 0 0 50%; /* show 2 cards */
+  }
+}
+
+@media (max-width: 600px) {
+  .review-card {
+    flex: 0 0 100%; /* show 1 full card */
+  }
+}
