@@ -12,22 +12,25 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Connect MongoDB
+// ===== MongoDB Connection =====
 mongoose
   .connect(process.env.MONGO_URI)
-  .then(() => console.log(" MongoDB connected successfully"))
-  .catch((err) => console.error(" Mongo connection error:", err));
+  .then(() => console.log("✅ MongoDB connected successfully"))
+  .catch((err) => console.error("❌ Mongo connection error:", err));
 
-// Routes
+// ===== Routes =====
 app.use("/api/demo", demoRoutes);
-
-// Root test route
-app.get("/", (req, res) => {
-  res.send("Cyberoaks backend running successfully ");
-});
-// Routes
 app.use("/api/enroll", enrollRoutes);
 
-// Start server
-const PORT = process.env.PORT || 8000;
-app.listen(PORT, () => console.log(` Server running on port ${PORT}`));
+// ===== Root Route =====
+app.get("/", (req, res) => {
+  res.status(200).json({
+    activeStatus: true,
+    error: false,
+    message: "Cyberoaks backend running successfully 🚀",
+  });
+});
+
+// ✅ DO NOT use app.listen() on Vercel
+// Vercel automatically handles serverless functions
+export default app;
