@@ -14,7 +14,7 @@ import cors from "cors";
 app.use(
   cors({
     origin: [
-      "https://cyberoaks-b953.vercel.app/", 
+      "https://cyberoaks-b953.vercel.app", 
     ],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
